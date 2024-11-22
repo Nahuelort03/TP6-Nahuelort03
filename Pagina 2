@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2 - Formulario</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pagina2">
+    <div class="container">
+        <h1>Formulario de Datos Personales</h1>
+        <form id="personal-data-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required><br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required><br>
+
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required><br>
+
+            <div class="form-buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+        </form>
+
+        <p id="responseMessage" style="display: none;"></p>
+
+        <div class="buttons">
+            <button onclick="navigateTo('pagina1.html')" class="animated-button">Ir a Página Principal</button>
+            <button onclick="navigateTo('pagina3.html')" class="animated-button">Ir a Página 3</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
