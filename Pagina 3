@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3 - Enviar Mensaje</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pagina3">
+    <div class="container">
+        <h1>Formulario para Enviar Mensaje</h1>
+        <form id="message-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br>
+
+            <div class="form-buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+        </form>
+        <p id="responseMessage" style="display: none;"></p>
+
+        <div class="buttons">
+            <button onclick="navigateTo('pagina1.html')" class="animated-button">Ir a Página Principal</button>
+            <button onclick="navigateTo('pagina2.html')" class="animated-button">Ir a Página 2</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
