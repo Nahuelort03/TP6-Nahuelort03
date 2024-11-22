@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pagina1">
+    <div class="container">
+        <h1>¡Bienvenido a mi WEB!</h1>
+        <p>En esta página encontrarás:</p>
+        <ul>
+            <li><strong>Página 2:</strong> Formulario que envíe los datos personales de una persona</li>
+            <li><strong>Página 3:</strong> Formulario que envíe un mensaje de texto largo</li>
+        </ul>
+
+        <div id="user-welcome"></div>
+
+        <div class="buttons">
+            <button onclick="navigateTo('pagina2.html')" class="animated-button">Ir a Página 2</button>
+            <button onclick="navigateTo('pagina3.html')" class="animated-button">Ir a Página 3</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
